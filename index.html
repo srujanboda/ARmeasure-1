@@ -1,17 +1,45 @@
-
 <!DOCTYPE html>
 <html>
+
 <head>
-  <meta charset="utf-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>WebXR AR Measure Demo v5.1</title>
   <style>
-    body { margin:0; overflow:hidden; }
-    #ui { position:fixed; top:10px; left:10px; background:#0008; color:#fff; padding:10px; }
+    body {
+      margin: 0;
+      overflow: hidden;
+    }
+
+    #ui {
+      position: fixed;
+      top: 10px;
+      left: 10px;
+      background: #0008;
+      color: #fff;
+      padding: 10px;
+    }
+
+    #start-btn {
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      padding: 15px 30px;
+      font-size: 18px;
+      background: #2196F3;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
   </style>
 </head>
+
 <body>
   <div id="ui">Scan room edges and tap corners</div>
+  <button id="start-btn">Start AR</button>
   <script type="module" src="./src/main.js"></script>
 </body>
+
 </html>
